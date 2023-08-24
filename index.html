@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Главная</title>
+
+</head>
+<body class="q">
+    <h2>Выберите форму</h2>
+    <a href="{% url 'forma1' %}">Форма1</a>
+    <a href="{% url 'forma2' %}">Форма2</a>
+
+</body>
+</html>

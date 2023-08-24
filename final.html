@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Карточка про животное</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Карточка про животное</h1>
+    <div class="animal-info">
+        <div>
+            <h2>Имя животного:</h2>
+            <p>{{ name }}</p>
+        </div>
+        <div>
+            <h2>Возраст:</h2>
+            <p>{{ age }}</p>
+        </div>
+        <div>
+            <h2>Порода:</h2>
+            <p>{{ poroda }}</p>
+        </div>
+        <div>
+            <h2>Цвет:</h2>
+            <p>{{ color }}</p>
+        </div>
+        <div>
+            <h2>Любимая еда:</h2>
+            <p>{{ food }}</p>
+        </div>
+        <div>
+            <h2>Фото:</h2>
+            <img src="{{ foto.url }}" alt="Фото животного">
+        </div>
+    </div>
+</body>
+</html>
